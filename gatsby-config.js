@@ -8,7 +8,7 @@ module.exports = {
     description: `The place to keep notes and thoughts on things.`,
     siteUrl: `https://readingwaters.com`,
     social: {
-      twitter: ''
+      email: 'readingwaters@gmail.com'
     },
   },
   plugins: [
