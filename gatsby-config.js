@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Keith Waters personal site`,
+    title: `ReadingWaters`,
     author: {
       name: `Keith Waters`,
       summary: `who is trying to learn and build more things.`,
@@ -60,13 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ReadingWaters`,
+        short_name: `ReadingWaters`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.ico`,
       },
     },
     `gatsby-plugin-react-helmet`,
