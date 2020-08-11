@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Keith Waters personal site`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Keith Waters`,
+      summary: `who is trying to learn and build more things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `The place to keep notes and thoughts on things.`,
+    siteUrl: `https://readingwaters.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: ''
     },
   },
   plugins: [
