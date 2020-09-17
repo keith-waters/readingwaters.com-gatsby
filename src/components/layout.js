@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const Layout = ({ title, children }) => {
 
@@ -15,15 +15,13 @@ const Layout = ({ title, children }) => {
     >
       <h1
         style={{
-          ...scale(1.2),
           margin: 0,
         }}
       >
         <Link
           style={{
-            boxShadow: `none`,
             color: `inherit`,
-            margin: 0
+            margin: 0,
           }}
           to={`/`}
         >
@@ -46,7 +44,7 @@ const Layout = ({ title, children }) => {
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a target="_blank" rel="noreferrer" href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
     </div>
   )
