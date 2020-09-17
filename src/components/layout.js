@@ -37,11 +37,13 @@ const Layout = ({ title, children }) => {
         marginRight: `auto`,
         maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        minHeight: '100vh',
+        position: 'relative'
       }}
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer style={{ position: "absolute", bottom: 0, paddingBottom: "10px"}}>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a target="_blank" rel="noreferrer" href="https://www.gatsbyjs.org">Gatsby</a>
