@@ -21,21 +21,9 @@ const Bio = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            email 
-          }
-        }
-      }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -45,7 +33,7 @@ const Bio = () => {
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
+        alt="Keith Waters"
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
@@ -57,9 +45,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        Send him an email to {social.email}
+        Hi there, I'm Keith Waters. Here you can read about the things I'm learning and working on.  
       </p>
     </div>
   )

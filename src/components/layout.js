@@ -3,19 +3,16 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+const Layout = ({ title, children }) => {
 
-  if (location.pathname === rootPath) {
-    header = (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          marginBottom: 20
-        }}
-      >
+  const header = (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        marginBottom: 20
+      }}
+    >
       <h1
         style={{
           ...scale(1.2),
@@ -33,45 +30,8 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h1>
-      <span style={{ flexGrow: 1 }}/>
-      <h3
-        style={{
-          margin: 0
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-            margin: 0
-          }}
-          to={`/articles`}
-        >
-          Articles
-        </Link>
-      </h3>
-      </div>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+    </div>
+  )
   return (
     <div
       style={{
